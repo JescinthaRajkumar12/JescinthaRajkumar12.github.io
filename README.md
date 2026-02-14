@@ -37,7 +37,7 @@ A minimalist, multi-page professional portfolio built with **React** and **React
 
 ## 🛠️ Features
 - **Multi-Page Routing**: Seamless navigation between Home, Experience, Projects, and Education.
-- [cite_start]**Responsive Design**: Optimized for viewing on desktops, tablets, and mobile devices. [cite: 75]
-- [cite_start]**Accessibility**: Built with semantic HTML to ensure WCAG compliance. [cite: 8, 36, 74]
+- **Responsive Design**: Optimized for viewing on desktops, tablets, and mobile devices. [cite: 75]
+- **Accessibility**: Built with semantic HTML to ensure WCAG compliance. [cite: 8, 36, 74]
 - **Modern UI**: Clean white background with high-contrast typography and icon badges.
 
