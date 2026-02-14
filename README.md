@@ -5,7 +5,7 @@ A minimalist, multi-page professional portfolio built with **React** and **React
 ## 🌐 Live Website
 [View my portfolio here](https://jescintharajkumar12.github.io/)
 
-## 🚀 Technologies Used
+## 🚀 Technical skills
 
 ### Frontend & Frameworks
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
