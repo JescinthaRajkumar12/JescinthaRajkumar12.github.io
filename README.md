@@ -27,19 +27,6 @@ I am currently advancing my expertise in **Cybersecurity**, focusing on:
 
 ---
 
-## 🚀 Portfolio Features
-
-This portfolio website highlights:
-
-✔ Professional Experience  
-✔ Technical Skills  
-✔ Full Stack & API Projects  
-✔ Cybersecurity Training  
-✔ Academic Publications  
-✔ Education & Certifications  
-✔ Key Achievements  
-
----
 
 ## 🛠️ Built With
 
