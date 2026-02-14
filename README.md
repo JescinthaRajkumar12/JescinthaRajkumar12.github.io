@@ -1,84 +1,70 @@
-# 🌐 Jescintha Rajkumar – Developer Portfolio
+# Getting Started with Create React App
 
-Welcome to my professional portfolio website.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This site showcases my work, technical skills, projects, and background as a Full Stack Developer with growing expertise in Cybersecurity.
+## Available Scripts
 
----
+In the project directory, you can run:
 
-## 👩‍💻 About Me
+### `npm start`
 
-I am a Full Stack Developer skilled in:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- JavaScript / TypeScript
-- React / Next.js
-- Node.js / Express
-- SQL / MongoDB
-- Microsoft Azure
-- Secure Coding & OWASP Principles
-- Accessibility (WCAG / ARIA)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-I am currently advancing my expertise in **Cybersecurity**, focusing on:
+### `npm test`
 
-- Vulnerability Assessment
-- Penetration Testing
-- Linux Systems & Security Tools
-- Web Security & Exploitation Techniques
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
----
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 🛠️ Built With
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-The portfolio is developed using core web technologies:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- **HTML5** – Structure & content
-- **CSS3** – Modern responsive styling
-- **JavaScript (ES6+)** – Interactivity & smooth navigation
+### `npm run eject`
 
----
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## 📂 Project Structure
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-├── index.html
-├── style.css
-├── main.js
-└── README.md
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
----
+## Learn More
 
-## 🌍 Live Website
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-You can view the live portfolio here:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-👉 **https://JescinthaRajkumar12.github.io/**
+### Code Splitting
 
-(Replace with your GitHub Pages URL)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
----
+### Analyzing the Bundle Size
 
-## 📚 Publications
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-My academic research and publications can be found on ResearchGate:
+### Making a Progressive Web App
 
-👉 https://www.researchgate.net/profile/Jescintha-Rajkumar-2
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
----
+### Advanced Configuration
 
-## 📫 Contact
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-**Jescintha Rajkumar**  
-Software Developer – Full Stack Developer  
+### Deployment
 
-📧 Email: jescintha.r@gmail.com  
-💼 LinkedIn: https://www.linkedin.com/in/jescintha-rajkumar  
-💻 GitHub: https://github.com/JescinthaRajkumar12  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
----
+### `npm run build` fails to minify
 
-## ⭐ Notes
-
-This portfolio is continuously updated as I expand my development and cybersecurity expertise.
-
-Thank you for visiting!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
