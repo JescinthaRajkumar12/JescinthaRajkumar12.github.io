@@ -2,7 +2,7 @@
 
 A minimalist, multi-page professional portfolio built with **React** and **React Router**, hosted on GitHub Pages. This site showcases my dual expertise in **Full-Stack Development** and **Cybersecurity**.
 
-## 🌐 Live Demo
+## 🌐 Live Website
 [View my portfolio here](https://jescintharajkumar12.github.io/)
 
 ## 🚀 Technologies Used
