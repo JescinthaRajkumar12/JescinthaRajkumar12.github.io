@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+* { box-sizing: border-box; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  /* Premium Dark Gradient Background */
+  background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+  color: #f8fafc; /* Crisp white-slate text */
   min-height: 100vh;
+}
+
+/* --- CUSTOM SCROLLBAR --- */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #020617; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+/* --- NAVBAR --- */
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1.2rem 5%;
+  /* Glassmorphism Navbar */
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar h2 { margin: 0; font-size: 1.8rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+.nav-links { display: flex; gap: 2.5rem; }
+.nav-links a { 
+  text-decoration: none; 
+  color: #94a3b8; 
+  font-weight: 500; 
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.nav-links a:hover, .nav-links a.active { 
+  color: #fff; 
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* --- MOBILE HAMBURGER MENU --- */
+.hamburger { display: none; font-size: 1.8rem; cursor: pointer; color: #fff; transition: transform 0.2s; }
+.hamburger:active { transform: scale(0.9); }
+
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(15px);
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 100;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .nav-links.mobile-active { display: flex; align-items: center; gap: 2rem; }
 }
+
+/* --- LAYOUT WRAPPERS --- */
+.app-layout { display: flex; flex-direction: column; min-height: 100vh; }
+.main-content { flex: 1; }
+.page-wrapper { width: 100%; max-width: 1000px; margin: 0 auto; padding: 4rem 2rem; }
+.page-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 3rem; text-align: center; }
+
+/* --- GLASSMORPHISM CARDS (Used in About & Education) --- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.glass-card:hover { border-color: rgba(255, 255, 255, 0.15); transform: translateY(-2px); }
+.glass-card p { color: #cbd5e1; line-height: 1.8; font-size: 1.05rem; }
+.glass-card li { color: #cbd5e1; margin-bottom: 0.8rem; line-height: 1.6; }
+.glass-card strong { color: #fff; }
+.card-icon { margin-right: 10px; color: #00d2ff; }
+
+/* --- HOME: GRADIENT TEXT & TERMINAL --- */
+.animated-gradient-text {
+  background: linear-gradient(270deg, #00d2ff, #3a7bd5, #00d2ff);
+  background-size: 200% auto;
+  animation: gradientShift 3s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  color: transparent; 
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+@keyframes gradientShift { 0% { background-position: 0% center; } 100% { background-position: 200% center; } }
+
+.terminal-window {
+  background-color: #0b0f19;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  overflow: hidden;
+  margin: 3rem 0;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+.terminal-header { background-color: #1e293b; padding: 0.8rem 1rem; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.terminal-button { width: 12px; height: 12px; border-radius: 50%; }
+.terminal-button.red { background-color: #ff5f56; }
+.terminal-button.yellow { background-color: #ffbd2e; }
+.terminal-button.green { background-color: #27c93f; }
+.terminal-title { margin: 0 auto; color: #64748b; font-size: 0.85rem; padding-right: 40px; }
+.terminal-body { padding: 2rem; font-size: 1.05rem; line-height: 1.7; }
+.terminal-body p { margin: 0 0 0.8rem 0; }
+.prompt { color: #10b981; font-weight: bold; margin-right: 0.8rem; }
+.output { color: #38bdf8; margin-bottom: 1.5rem !important; }
+.cursor { display: inline-block; width: 10px; height: 18px; background-color: #fff; vertical-align: middle; animation: blink 1s step-end infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* --- HOME: BADGES --- */
+.badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  margin: 6px;
+  color: #e2e8f0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+.badge:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* --- EXPERIENCE: COLOR-CODED TIMELINE --- */
+.timeline { position: relative; max-width: 900px; margin: 0 auto; padding: 2rem 0; }
+.timeline::after {
+  content: ''; position: absolute; width: 2px;
+  background: rgba(255,255,255,0.1);
+  top: 0; bottom: 0; left: 40px;
+}
+.timeline-item { position: relative; padding-left: 100px; margin-bottom: 4rem; }
+.timeline-icon {
+  position: absolute; left: 20px; top: 0;
+  width: 44px; height: 44px; border-radius: 50%;
+  display: flex; justify-content: center; align-items: center;
+  font-size: 1.2rem; z-index: 10;
+  transition: transform 0.3s ease;
+}
+.timeline-item:hover .timeline-icon { transform: scale(1.1); }
+.timeline-content {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+.timeline-item:hover .timeline-content { transform: translateX(5px); background: rgba(255, 255, 255, 0.05); }
+.timeline-date { font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.5rem; display: block; }
+.timeline-content h3 { margin: 0 0 0.5rem 0; font-size: 1.5rem; color: #fff; }
+.card-subtitle { color: #94a3b8; font-size: 1rem; margin-bottom: 1.5rem; font-weight: 500; }
+.timeline-content ul { padding-left: 1.2rem; margin: 0; color: #cbd5e1; }
+.timeline-content li { margin-bottom: 0.5rem; line-height: 1.6; }
+
+/* Timeline Color Coding (Without touching your arrays!) */
+/* 1. Cyber (Neon Green) */
+.timeline-item:nth-child(1) .timeline-icon { background: #10b981; box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); color: #000; }
+.timeline-item:nth-child(1) .timeline-date { color: #10b981; }
+/* 2. Full-Stack (Purple) */
+.timeline-item:nth-child(2) .timeline-icon { background: #a855f7; box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); color: #fff; }
+.timeline-item:nth-child(2) .timeline-date { color: #a855f7; }
+/* 3. Theatre Admin (Blue) */
+.timeline-item:nth-child(3) .timeline-icon { background: #3b82f6; box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); color: #fff; }
+.timeline-item:nth-child(3) .timeline-date { color: #3b82f6; }
+/* 4. Professor (Orange) */
+.timeline-item:nth-child(4) .timeline-icon { background: #f59e0b; box-shadow: 0 0 20px rgba(245, 158, 11, 0.4); color: #000; }
+.timeline-item:nth-child(4) .timeline-date { color: #f59e0b; }
+
+@media (max-width: 768px) {
+  .timeline::after { left: 20px; }
+  .timeline-item { padding-left: 60px; }
+  .timeline-icon { left: 0; width: 40px; height: 40px; font-size: 1rem; }
+}
+
+/* --- FOOTER --- */
+.footer {
+  text-align: center; padding: 2.5rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(10px);
+  color: #94a3b8; width: 100%;
+}
+.social-links { margin-top: 1rem; display: flex; align-items: center; justify-content: center; gap: 1rem; }
+.social-links a { color: #cbd5e1; font-size: 1.5rem; transition: color 0.3s ease, transform 0.3s ease; }
+.social-links a:hover { color: #00d2ff; transform: translateY(-3px); }
