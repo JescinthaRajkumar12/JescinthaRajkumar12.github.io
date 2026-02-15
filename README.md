@@ -2,10 +2,10 @@
 
 A minimalist, multi-page professional portfolio built with **React** and **React Router**, hosted on GitHub Pages. This site showcases my dual expertise in **Full-Stack Development** and **Cybersecurity**.
 
-## 🌐 Live Demo
+## 🌐 Live Website
 [View my portfolio here](https://jescintharajkumar12.github.io/)
 
-## 🚀 Technologies Used
+## 🚀 Technical skills
 
 ### Frontend & Frameworks
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -37,7 +37,7 @@ A minimalist, multi-page professional portfolio built with **React** and **React
 
 ## 🛠️ Features
 - **Multi-Page Routing**: Seamless navigation between Home, Experience, Projects, and Education.
-- [cite_start]**Responsive Design**: Optimized for viewing on desktops, tablets, and mobile devices. [cite: 75]
-- [cite_start]**Accessibility**: Built with semantic HTML to ensure WCAG compliance. [cite: 8, 36, 74]
+- **Responsive Design**: Optimized for viewing on desktops, tablets, and mobile devices. [cite: 75]
+- **Accessibility**: Built with semantic HTML to ensure WCAG compliance. [cite: 8, 36, 74]
 - **Modern UI**: Clean white background with high-contrast typography and icon badges.
 
